@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- Configuração do caminho do contexto -->
+    <!-- Define o caminho do contexto da aplicação -->
+    <Context path="/poc-tomcat" docBase="minha-app" reloadable="true">
+
+        <!-- Configuração de um filtro de CORS -->
+        <!-- Permite requisições de qualquer origem -->
+        <Valve className="org.apache.catalina.filters.RemoteAddrValve" allow="^.*$"/>
+
+    </Context>
+</Context>
